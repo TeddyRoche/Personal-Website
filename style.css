@@ -213,10 +213,8 @@ nav ul li a:hover::after{
 }
 .services-list div:hover{
     background-color: #00ff88;
-    transform: translateY(-10px);
-}
-.black{
     color: #000000;
+    transform: translateY(-10px);
 }
 /*-----------------Portfolio----------------------*/
 .sub-title.wor{
