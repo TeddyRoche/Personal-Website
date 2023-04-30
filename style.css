@@ -189,7 +189,6 @@ nav ul li a:hover::after{
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
-    color: #000000;
 }
 .services-list div{
     background: #262626;
@@ -210,8 +209,14 @@ nav ul li a:hover::after{
 }
 .services-list div:hover{
     background-color: #00ff88;
-    color: #000000;
     transform: translateY(-10px);
+}
+.services-list div:hover{
+    background-color: #00ff88;
+    transform: translateY(-10px);
+}
+.black{
+    color: #000000;
 }
 /*-----------------Portfolio----------------------*/
 .sub-title.wor{
