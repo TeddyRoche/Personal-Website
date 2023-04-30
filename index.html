@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ee5c835d58.js" crossorigin="anonymous"></script>
+</head>
+<!--
+    This div is for my Home Page
+-->
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="closemenu()">Home</a></li>
+                    <li><a href="#about" onclick="closemenu()">About</a></li>
+                    <li><a href="#services" onclick="closemenu()">Services</a></li>
+                    <li><a href="#portfolio" onclick="closemenu()">Work</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="grids">
+                <div class="header-text">
+                    <p>Software Engineer - Cybersecurity Student </p>
+                    <h1>Hello, my name is <span>Theodore</span> Roche From MA, USA </h1>
+                </div>
+                <div class="header-pic">
+                    <img src="images/user.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+<!--
+    This div is for my About Page
+-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Dedicated college student with a strong passion for technology, I possess a solid foundation in software engineering and cybersecurity
+                        principles. Skilled in various programming languages, including Java, Python, and C++, I am adept at developing and maintaining secure software
+                        solutions. Through coursework and personal projects, I have gained experience in network security, vulnerability assessment, and penetration
+                        testing. With a strong attention to detail and a commitment to ongoing learning, I am poised to contribute to any software engineering or
+                        cybersecurity team.</p>
+                </div>
+                <div class="about-col-2">
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programmer</span><br>Knowledge of C, C++, C#, Python, Java, HTML, JavaScript, CSS, and Assembly</li>
+                                <li><span>Cybersecurity</span><br>Finding Flaws/Exploits in Websites/Code/Passwords/Network Logs</li>
+                                <li><span>Untiy</span><br>Building 2D/3D/VR games and Environments</li>
+                                <li><span>Cloud Systems</span><br>Experience in AWS and Google Cloud Platform</li>
+                                <li><span>Database Systems</span><br>Background in PHP, SQL, and MySQL</li>
+                                <li><span>Networking/IT</span><br>Set up/Monitor/Maintain Routers, Switches, and Clients</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Teachers Assistant</span><br>As a computer science teaching assistant, I provided valuable support to students by facilitating lab sessions, grading assignments, and providing
+                                    one-on-one assistance with coursework. I demonstrated a deep understanding of computer science concepts and programming languages,
+                                    including Java, Python, and C++. By explaining complex ideas in an accessible way and encouraging active participation, I helped students develop
+                                    critical thinking and problem-solving skills. My dedication to student success and strong communication skills made me a valuable asset to the
+                                    computer science department
+                                    <li class="ex-title">Classes Include:</li>
+                                    <li class="ex-design">Intro to Computer Science - HTML, JavaScript, CSS, and Python</li>
+                                    <li class="ex-design">Comp I - C and C++</li>
+                                    <li class="ex-design">Comp II - C and C++</li>
+                                    <li class="ex-design">Data structures and Algorithms - Language you prefer</li>
+                                </li>
+                                <li><span>Player in National Cyber League</span><br>Participated in the National Cyber League, gaining practical experience in various cybersecurity domains and honing skills in problem-solving and
+                                    critical thinking. Developed expertise in utilizing security tools and techniques, including vulnerability scanning, penetration testing, and incident
+                                    response
+                                    <li class="ex-title">Placements:</li>
+                                    <li class="ex-design">670 out of 6272 Participants</li>
+                                    <li class="ex-design">368 out of 3593 Teams</li>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>South Shore Christian Acadmey</span><br>Highschool(2019) - Weymouth, MA
+                                </li>
+                                <li><span>Eastern Nazarene College</span><br>Bachelor of Science: Computer Science<br>(2019 - Present) Quincy, MA
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+        Services
+    -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title serv">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-sharp fa-solid fa-code"></i>
+                    <h2>Computer Programmer</h2>
+                    <p>Skills and knowledge to design and develop high-quality software systems that meet your needs. 
+                        With a strong understanding of programming languages and algorithms, I can tackle complex projects with ease and ensure that my work is innovative and efficient</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-shield-halved"></i>
+                    <h2>Penetration  Tester</h2>
+                    <p>I specialize in identifying and exploiting vulnerabilities in computer systems, networks, and applications to help ensure the security of your digital assets. 
+                        With my expertise and tools, I can provide valuable insights and recommendations for improving your overall security posture</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-unity"></i>                    
+                    <h2>Game Designer</h2>
+                    <p>I am a creative professional for hire, specializing in designing immersive and engaging gaming experiences using the Unity engine. 
+                        With my skills in game mechanics, level design, and storytelling, 
+                        I can help bring your game ideas to life and deliver a memorable and enjoyable gaming experience for your audience</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+        Portfolio
+    -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title wor">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/web-app.jpg">
+                    <div class="layer">
+                        <h3>JavaFX Web App</h3>
+                        <p>
+                            The app is a JavaFX address book for users. It can store and remember people info for you so you don't have to.
+                        </p>
+                        <a target="_blank" href="https://github.com/TeddyRoche/Address_Book"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/SQL.png">
+                    <div class="layer">
+                        <h3>C# SQL App</h3>
+                        <p>
+                            This is a C# windows form app that access a SQL database. It stores the player information of the Professional Soccer Team Tottenham Hotspurs.
+                        </p>
+                        <a target="_blank" href="https://github.com/TeddyRoche/Database_Project"><i class="fa-solid fa-link"></i></a>
+                    <div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="https://github.com/TeddyRoche" target="_blank" class="btn">See more</a>
+<!--
+    Contact
+-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title cont">Contact Me</h1>
+                <p><i class="fa-regular fa-envelope"></i>TeddyRoche2000@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone-flip"></i>(508)-649-2292</p>
+                <div class="social-icons">
+                    <a target="_blank" href="https://www.instagram.com/ted_roche/"><i class="fa-brands fa-instagram"></i></a>
+                    <a target="_blank" href="https://twitter.com/Teddy_Roche_17"><i class="fa-brands fa-twitter"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/theodore-roche-291706237/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/Roche-Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Theodore Roche</p>
+    </div>
+</div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname)
+        {
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwBhZt8Cdmp1slfVUEzsFyPM4eg1_-ML3creM-jWjxSR3iLSc7HRC11EFC1aTaOBTnT/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
