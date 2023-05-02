@@ -567,6 +567,12 @@ nav .fa-solid{
         font-size: 18px;
         border-radius: 6px;
     }
+    .services-list a{
+        color: #fff;
+    }
+    .services-list div:hover{
+        color: #fff;
+    }
 
 
 }
