@@ -563,9 +563,11 @@ nav .fa-solid{
         background: #b59dcc;
         padding: 10px;
         margin: 10px -40px;
-        color: #000000;
         font-size: 18px;
         border-radius: 6px;
+    }
+    .text_color{
+        color: black;
     }
     .services-list a{
         color: #fff;
