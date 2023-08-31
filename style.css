@@ -556,7 +556,7 @@ nav .fa-solid{
     .contact-right form{
         width: 100%;
     }
-    form input, form textarea{
+    .contact-right form input, .contact-right form textarea{
         width: 225%;
         border: 0;
         outline: none;
