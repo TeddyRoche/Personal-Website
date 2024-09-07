@@ -52,6 +52,8 @@ nav ul li a:hover::after{
 .header-text{
     margin-top: 40%;
     font-size: 30px;
+    margin-right: 100px;
+    text-align: center;
 }
 .header-pic{
     margin-top: 15%;
@@ -78,7 +80,6 @@ nav ul li a:hover::after{
 .header-text p{
     display: table;
     margin: 0px, auto, 0px, auto;
-    padding-left: 12px;
     color: #fff;
     border-radius: 10px;
 }
