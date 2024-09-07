@@ -2,8 +2,8 @@
     padding: 80px 0;
     background-color: #027f88;
     color: #ffffff;
-    min-height: 112vh;
-    max-height: 135vh;
+    min-height: 700px;
+    max-height: 1000px;
 }
 .row{
     display: flex;

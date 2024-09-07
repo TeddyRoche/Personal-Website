@@ -3,6 +3,8 @@
     background-color: #ababab;
     margin-top: -85px;
     height: 100vh;
+    min-height: 600px;
+    max-height: 700px;
 }
 .sub-title.serv{
     color: #262626;
@@ -22,6 +24,7 @@
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
     cursor:default;
+    min-height: 412px;
 }
 .services-list div i{
     font-size: 50px;
