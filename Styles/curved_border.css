@@ -8,8 +8,9 @@ nav .fa-solid{
 }
 
 .custom-shape-divider-bottom-1715634999 {
-    position: absolute;
-    bottom: -67px;
+    position: relative;
+    margin-bottom: 0px;
+    margin-top: -45px;
     left: 0;
     width: 100%;
     overflow: hidden;
