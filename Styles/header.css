@@ -1,0 +1,89 @@
+#header{
+    background-image: linear-gradient(135deg, rgb(0, 195, 255), rgb(0, 147, 192), rgb(0, 110, 255), rgb(0, 0, 255), rgb(0, 0, 182), rgb(0, 0, 124), rgb(0, 0, 94), rgb(0, 37, 22), rgb(0, 58, 34), rgb(0, 100, 58), rgb(0, 168, 98), rgb(0, 238, 139));
+    width: 100%;
+    height: 110vh;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: right;
+    
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 140px;
+}
+/*Make the nav menu in line and spaced apart*/
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{ 
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    border-radius: 10px;
+}
+/*this adds the under line for my navigation menu and makes it invisible*/
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #00ff88;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+/*This makes the line visible when hovered over */
+nav ul li a:hover::after{
+    width: 100%;
+}
+/*Create the font size for my header on my page*/
+.header-text{
+    margin-top: 40%;
+    font-size: 30px;
+}
+.header-pic{
+    margin-top: 15%;
+    font-size: 30px;
+}
+.header-pic img{
+    width: 90%;
+    border-radius: 40px;
+}
+.grids{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+/*Chnages the font size for the h1 in my header*/
+.header-text h1{
+    padding: 10px;
+    display: table;
+    margin: 0px, auto, 0px, auto;
+    font-size: 45px;
+    color: #fff;
+    border-radius: 10px;
+}
+.header-text p{
+    display: table;
+    margin: 0px, auto, 0px, auto;
+    padding-left: 12px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+/*chnages the color of what is inside <span>*/
+.header-text h1 span{
+    color: #00ff88;
+}

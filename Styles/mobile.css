@@ -1,0 +1,200 @@
+@media only screen and (max-width: 600px){
+    body{
+        background-image: linear-gradient(100deg, rgb(0, 195, 255), rgb(0, 147, 192), rgb(0, 110, 255), rgb(0, 0, 255), rgb(0, 0, 182), rgb(0, 0, 124), rgb(0, 0, 94), rgb(0, 37, 22), rgb(0, 58, 34), rgb(0, 100, 58), rgb(0, 168, 98), rgb(0, 238, 139));
+        color: #fff;
+    }
+    #header{
+        
+        background-size: auto;
+        background-position: center;
+    }
+    .header-text{
+        margin-top: 20%;
+        font-size: 20px;
+    }
+    .header-pic{
+        margin-top: 10%;
+        font-size: 30px;
+    }
+    .header-pic img{
+        width: 100%;
+        border-radius: 30px;
+    }
+    /*Chnages the font size for the h1 in my header*/
+    .header-text h1{
+        display: table;
+        margin: 0px, auto, 0px, auto;
+        padding: 10px;
+        font-size: 32px;
+        margin-top: 20px;
+        color: #fff;
+        border-radius: 10px;
+    }
+    .header-text p{
+        display: table;
+        margin: 0px, auto, 0px, auto;
+        padding: 5px;
+        color: #fff;
+        border-radius: 10px;
+    }
+    nav .fa-solid.fa-bars{
+        display: block;
+        font-size: 25px;
+        color: #000a2c;
+    }
+    
+    nav .fa-solid.fa-xmark{
+        display: block;
+        font-size: 25px;
+        color: #fff;
+    }
+    nav ul{
+        background-color: #000a2c;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 150vh;
+        padding-top: 40px;
+        z-index: 8;
+        transition: right 0.5s
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .about-col-1 .sub-title{
+        text-align: left;
+        font-size: 60px;
+        width: 180%;
+    }
+    .sub-title{
+        text-align: center;
+    }
+    .sub-title.serv{
+        font-size: 50px;
+    }
+    .contact-left .sub-title{
+        width: 100%;
+        font-size: 35px;
+    }
+    .about-col-1 p{
+
+        width: 180%;
+        font-size: 17px;
+    }
+    .tab-contents{
+        width: 90%;
+    }
+    .layer{
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgb(0,0,0,0.6), #00b5c2);
+        border-radius: 10px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 40px;
+        text-align: center;
+        font-size: 15px;
+    }
+    .layer h3{
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    .layer a{
+        margin-top: 10px;
+        color: #00b5c2;
+        text-decoration: none;
+        font-size: 15px;
+        line-height: 40px;
+        background: #fff;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        text-align: center;
+    }
+    .btn{
+        display: block;
+        margin: 50px auto;
+        width: fit-content;
+        border: 1px solid #00b5c2;
+        padding: 14px 50px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        background: linear-gradient(rgb(0,0,0,0.6), #00b5c2);
+        background-color: #00b5c2;
+    }
+    .contact-left{
+        flex-basis: 100%;
+    }
+    .contact-left p i{
+        color: #bc7df7;
+        margin-right: 5px;
+        font-size: 25px;
+    }
+    .contact-left p{
+        margin-top: 30px;
+        font-size: 15px;
+    }
+    .social-icons a{
+        text-decoration: none;
+        font-size: 30px;
+        margin-right: 15px;
+        color: #bc7df7;
+        display: inline-block;
+    }
+    /*submit button*/
+    form .btn.btn2{
+        padding: 10px 40px;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    /*Download button*/
+    .btn.btn2{
+        padding: 10px 40px;
+        display: inline-block;
+        background: #482469;
+        border-color: #341b4b;
+        font-size: 18px;
+        text-align: center;
+    }
+    .contact-right form{
+        width: 100%;
+    }
+    .contact-right form input, .contact-right form textarea{
+        width: 225%;
+        border: 0;
+        outline: none;
+        background: #b59dcc;
+        padding: 10px;
+        margin: 10px -40px;
+        font-size: 18px;
+        border-radius: 6px;
+    }
+    .text_color{
+        color: black;
+    }
+    .services-list a{
+        color: #fff;
+    }
+    .services-list div:hover{
+        color: #fff;
+    }
+
+
+}

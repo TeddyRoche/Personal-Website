@@ -1,0 +1,85 @@
+    <div id="classes">
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators" >
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <p>This course delves into algorithm design and implementation 
+                            for data structure manipulation, covering linked lists, stacks, queues, arrays, trees, graphs, 
+                            and network algorithms. Students analyze runtime behavior, exploring greedy algorithms, divide and conquer, 
+                            and dynamic programming.</p>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Data Structures and Algorithms</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <p>This course provides an overview of database management systems, 
+                            covering relational, network, and hierarchical models, along with entity relationships. 
+                            Students learn data definition and manipulation languages like relational algebra, relational calculus, and SQL. 
+                            Additionally, concurrent access and recovery issues are addressed.</p>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Database Systems</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <p>This course delves into advanced object-oriented software development using JAVA, 
+                            covering concurrency, inheritance, and polymorphism. It explores graphical programming, 
+                            File Streams, and I/O Processing, while also comparing procedural and object paradigms. 
+                            Additionally, it addresses programming with multiple processes and exception handling, 
+                            all within the context of software development using libraries and tools.</p>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Java</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <p>An overview of operating system concepts. 
+                            Topics include layered architecture, CPU scheduling, memory management, device management, 
+                            file systems and process management. Design of specific operating systems such as UNIX will be considered. 
+                            Students will complete projects designing or modifying parts of an existing operating system.</p>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Operating Systems</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <p>This class explores Unity, a premier real-time development platform, 
+                            for game and VR creation. Through C# and visual programming, delve into AI, object-oriented coding, 
+                            and project management. Hands-on projects lead to a final student-designed endeavor.</p>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Special Topics in C.S.</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <p>Introduces the field of microcomputers. 
+                            Topics include microcomputer organization and architecture, 
+                            machine and assembly language programming, interrupts, serial interfacing, D/A and A/D interfacing.</p>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>MicroComputer Interfacing</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <p>This course introduces Cloud Computing, Infrastructure, 
+                            and Networking fundamentals, exploring their applications in IT, App Development, and Machine Learning. 
+                            Using the Google Cloud Platform (GCP), students learn to effectively utilize the cloud. </p>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Google Cloud Computing</h5>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+    </div>
