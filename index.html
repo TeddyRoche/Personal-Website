@@ -11,20 +11,52 @@
                 padding: 0;
                 font-family: 'Poppins', sans-serif;
                 box-sizing: border-box;
-                max-width: 1280px;
-                max-height: 1920px;
                 margin: auto;
-
+            }
+            html, body {
+                height: 100%;
             }
             body{
-                color: #fff;
-                background-color: #111827;
+                position: relative;
+                isolation: isolate; /* ensures the negative z-index stays behind content */
+                color: #F3F3F6;
             }
+            body::before{
+                content: "";
+                position: fixed;
+                inset: 0;
+                z-index: -1;
+                pointer-events: none;
+                /* darker base so glow stands out */
+                background-color: #0B1220;
+                background-image:
+                /* left/top glow */
+                radial-gradient(1200px 700px at 18% -8%,
+                rgba(29,78,216,0.28) 0%,
+                rgba(29,78,216,0.14) 32%,
+                rgba(29,78,216,0) 62%),
+                /* right/bottom glow */
+                radial-gradient(1100px 650px at 82% 108%,
+                rgba(147,51,234,0.26) 0%,
+                rgba(147,51,234,0.12) 34%,
+                rgba(147,51,234,0) 64%),
+                /* gentle vertical tint for contrast */
+                linear-gradient(180deg, #0B1220 0%, #111827 55%, #0B1220 100%);
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-attachment: scroll; /* change to fixed if you want a parallax feel */
+                color: #F3F3F6;
+                }
             html{
                 scroll-behavior: smooth;
             }
             p{
                 color: #F3F4F6;
+            }
+            .container {
+                width: min(100%, 2000px);
+                margin-inline: auto;
+                padding-inline: 16px;
             }
     </style>
     <link rel="stylesheet" href="Styles/about.css">
@@ -32,7 +64,6 @@
     <link rel="stylesheet" href="Styles/header.css">
     <link rel="stylesheet" href="Styles/portfolio.css">
     <link rel="stylesheet" href="Styles/specialties.css">
-    <link rel="stylesheet" href="Styles/curved_border.css">
     <link rel="stylesheet" href="Styles/mobile.css">
     <link rel="stylesheet" href="Styles/classes.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -51,9 +82,7 @@
                     <li><a href="#services" onclick="closemenu()">Services</a></li>
                     <li><a href="#portfolio" onclick="closemenu()">Work</a></li>
                     <li><a href="#contact" onclick="closemenu()">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="grids">
                 <div class="header-text">
@@ -65,11 +94,6 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="custom-shape-divider-bottom-1715634999">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-        </svg>
     </div>
 <!--
     This div is for my About Page
@@ -145,11 +169,6 @@
             </div>
         </div>
     </div>
-    <div class="custom-shape-divider-bottom-1715635812">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-        </svg>
-    </div>
     <!--
         Specialties
     -->
@@ -182,11 +201,6 @@
             </div>
         </div>
     </div>
-    <div class="custom-shape-divider-bottom-1715636093">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-        </svg>
-    </div>
     <!--
         Portfolio
     -->
@@ -202,7 +216,7 @@
                             Create a fully functioning Address Book Application that allows users to store information. 
                             I used .txt files to store each entry to allow repopulating when you close and reopen the App.
                         </p>
-                        <a target="_blank" href="https://github.com/TeddyRoche/Address_Book"><i class='fa fa-link' style='font-weight: bolder; font-size:36px; margin-top: 12px;'></i></a>
+                        <a target="_blank" href="https://github.com/TeddyRoche/Address_Book"><i class='fa fa-link' style='font-weight: bolder; font-size: 25px; margin-top: 12px;'></i></a>
                     </div>
                 </div>
                 <div class="work">
@@ -212,7 +226,7 @@
                         <p>
                             Created a Fully function MineSweeper Game from scrath with varying difficulties.
                         </p>
-                        <a target="_blank" href="https://github.com/TeddyRoche/MineSweeper"><i class='fa fa-link' style='font-weight: bolder; font-size:36px; margin-top: 12px;'></i></a>
+                        <a target="_blank" href="https://github.com/TeddyRoche/MineSweeper"><i class='fa fa-link' style='font-weight: bolder; font-size:25px; margin-top: 12px;'></i></a>
                     <div>
                 </div>
             </div>
@@ -224,7 +238,7 @@
                 <p>
                     Point of Sales system using Servers and Clients to Fulfill Customers orders in C# 
                 </p>
-                <a target="_blank" href="https://github.com/TeddyRoche/Kitchen_Network_System"><i class='fa fa-link' style='font-weight: bolder; font-size:36px; margin-top: 12px;'></i></a>
+                <a target="_blank" href="https://github.com/TeddyRoche/Kitchen_Network_System"><i class='fa fa-link' style='font-weight: bolder; font-size:25px; margin-top: 12px;'></i></a>
             <div>
         </div>
     </div>

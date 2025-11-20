@@ -57,6 +57,8 @@ form input, form textarea{
     margin: 15px 0;
     font-size: 18px;
     border-radius: 6px;
+    filter: drop-shadow(8px 8px 10px #374151);
+
 }
 form .btn2{
     padding: 14px 60px;
