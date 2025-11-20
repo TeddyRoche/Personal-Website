@@ -1,14 +1,15 @@
 #services{
     padding: 30px 0;
-    background-color: #ababab;
+    background-color: #111827;
     margin-top: -85px;
     height: 100vh;
     min-height: 600px;
     max-height: 700px;
 }
 .sub-title.serv{
-    color: #262626;
+    color: #0EA5E9;
     cursor: default;
+    text-align: center; 
 }
 .services-list{
     display: grid;
@@ -17,7 +18,7 @@
     margin-top: 50px;
 }
 .services-list div{
-    background: #262626;
+    background: #1F2937;
     padding: 40px;
     font-size: 14px;
     font-weight: 300;
@@ -25,6 +26,8 @@
     transition: background 0.5s, transform 0.5s;
     cursor:default;
     min-height: 412px;
+    filter: drop-shadow(8px 8px 10px #374151);
+
 }
 .services-list div i{
     font-size: 50px;
@@ -36,11 +39,15 @@
     margin-bottom: 15px;
 }
 .services-list div p{
+    color: #1F2937;
+    font-size: 18px;
+}
+.services-list div:hover p{
     color: #262626;
 }
 .services-list div:hover{
-    background-color: #00ff88;
-    color: #000000;
+    background-color: #F3F4F6;
+    color: #262626;
     transform: translateY(-10px);
 }
 .services-list a{

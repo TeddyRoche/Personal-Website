@@ -1,17 +1,18 @@
 .sub-title.cont{
-    color:#bc7df7;
+    color:#F3F4F6;
 }
 .contact-left{
     flex-basis: 35%;
 }
 .contact-right{
     flex-basis: 60%;
+    
 }
 .contact-left p{
     margin-top: 30px;
 }
 .contact-left p i{
-    color: #bc7df7;
+    color: #0EA5E9;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -27,17 +28,21 @@
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: #bc7df7;
+    color: #F59E0B;
     transform: translateY(-5px);
 }
 .btn.btn2{
     display: inline-block;
-    background: #482469;
-    border-color: #341b4b;
+    background: #0EA5E9;
     transition: transform 0.5s;
+    filter: drop-shadow(8px 8px 10px #374151);
+}
+.btn .btn2 .new a{
+    position: relative;
+    top: 455px;
 }
 .btn.btn2:hover{
-    background: #69349b;
+    background: #F59E0B;
     transform: translateY(-5px);
 }
 .contact-right form{
@@ -47,10 +52,9 @@ form input, form textarea{
     width: 100%;
     border: 0;
     outline: none;
-    background: #b59dcc;
+    background: #1F2937;
     padding: 15px;
     margin: 15px 0;
-    color: #000000;
     font-size: 18px;
     border-radius: 6px;
 }
@@ -64,7 +68,18 @@ form .btn2{
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: #262626;
     font-weight: 300;
     margin-top: 20px;
+}
+input{
+    color: #F3F4F6;
+}
+input::placeholder{
+    color: #F3F4F6;
+}
+textarea{
+    color: #F3F4F6;
+}
+textarea::placeholder{
+    color: #F3F4F6;
 }

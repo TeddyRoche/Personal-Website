@@ -2,14 +2,14 @@ nav .fa-solid{
     display: none;
 }
 #msg{
-    color: #027f88;
+    color: #111827;
     margin-top: -40px;
     display: block;
 }
 
 .custom-shape-divider-bottom-1715634999 {
     position: relative;
-    margin-bottom: 0px;
+    margin-bottom: -1px;
     margin-top: -45px;
     left: 0;
     width: 100%;
@@ -26,7 +26,7 @@ nav .fa-solid{
 }
 
 .custom-shape-divider-bottom-1715634999 .shape-fill {
-    fill: #027f88;
+    fill: #111827;
 }
 
 
@@ -48,7 +48,7 @@ nav .fa-solid{
 }
 
 .custom-shape-divider-bottom-1715635812 .shape-fill {
-    fill: #ababab;
+    fill: #111827;
 }
 
 
@@ -69,5 +69,5 @@ nav .fa-solid{
 }
 
 .custom-shape-divider-bottom-1715636093 .shape-fill {
-    fill: #ababab;
+    fill: #111827;
 }
