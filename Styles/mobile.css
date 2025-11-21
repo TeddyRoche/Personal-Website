@@ -67,10 +67,6 @@
         width: 100%;
         font-size: 12px;
     }
-    .about-col-2{
-        flex-basis: 00%;
-        width: 90vw;
-    }
     .tab-contents{
         width: 90%;
     }
