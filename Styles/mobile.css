@@ -21,6 +21,7 @@
     .header-pic{
         margin-top: 5%;
         font-size: 30px;
+        margin-left: -5vw;
     }
     .header-pic img{
         width: 90%;
