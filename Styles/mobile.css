@@ -63,7 +63,10 @@
         font-size: 35px;
     }
     .about-col-1 p{
-
+        width: 100%;
+        font-size: 12px;
+    }
+    .about-col-2{
         width: 100%;
         font-size: 12px;
     }
