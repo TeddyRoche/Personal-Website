@@ -67,8 +67,8 @@
         font-size: 12px;
     }
     .about-col-2{
-        width: 100%;
-        font-size: 12px;
+        width: 90%;
+        margin-left: -5vw;
     }
     .tab-contents{
         width: 90%;
