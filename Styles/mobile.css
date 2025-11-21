@@ -1,5 +1,5 @@
 @media only screen and (max-width: 600px){
-    body{
+    html{
         overflow-x: hidden;
     }
     #header{
@@ -66,6 +66,10 @@
 
         width: 100%;
         font-size: 12px;
+    }
+    .about-col-2{
+        flex-basis: 00%;
+        width: 90vw;
     }
     .tab-contents{
         width: 90%;
