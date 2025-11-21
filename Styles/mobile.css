@@ -109,18 +109,11 @@
         color: F3F4F6;
     }
     #contact{
-        width: 100vw;
+        width: 80vw;
+        text-align: center;
     }
     .contact-left{
         flex-basis: 100%;
-    }
-    .contact-left p i{
-        margin-right: 5px;
-        font-size: 25px;
-    }
-    .contact-left p{
-        margin-top: 30px;
-        font-size: 15px;
     }
     .social-icons a{
         text-decoration: none;
@@ -141,17 +134,42 @@
         font-size: 18px;
         text-align: center;
     }
-    .contact-right form{
-        width: 100%;
-    }
     .contact-right form input, .contact-right form textarea{
-        width: 225%;
+        width: 85vw;
         border: 0;
         outline: none;
         padding: 10px;
-        margin: 10px -40px;
+        margin: 10px -5vw;
         font-size: 18px;
         border-radius: 6px;
+    }
+    form .btn2{
+    padding: 14px 10px;
+    font-size: 18px;
+    margin-top: 0px;
+    cursor: pointer;
+    }
+    .copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    font-weight: 300;
+    margin-top: 0px;
+    }
+    .btn.btn2:hover{
+    transform: translateY(0px);
+    }
+    .social-icons a:hover{
+    transform: translateY(0px);
+    }
+    .btn:hover{
+    transform: translateY(0px);
+    }
+    .layer a:hover{
+    transform: translateY(0px);
+    }
+    .work:hover img{
+    transform: scale(1);
     }
 
 }
