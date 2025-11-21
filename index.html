@@ -6,59 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
     <style>
-            *{
+            * {
                 margin: 0;
                 padding: 0;
                 font-family: 'Poppins', sans-serif;
                 box-sizing: border-box;
-                margin: auto;
             }
+            /* ---------- GLOBAL STYLES ---------- */
+
             html, body {
                 height: 100%;
+                scroll-behavior: smooth;
             }
-            body{
+
+            body {
                 position: relative;
-                isolation: isolate; /* ensures the negative z-index stays behind content */
-                color: #F3F3F6;
+                isolation: isolate;
+                color: var(--text-main);
             }
-            body::before{
+
+            body::before {
                 content: "";
                 position: fixed;
                 inset: 0;
                 z-index: -1;
                 pointer-events: none;
-                /* darker base so glow stands out */
-                background-color: #0B1220;
-                background-image:
-                /* left/top glow */
-                radial-gradient(1200px 700px at 18% -8%,
-                rgba(29,78,216,0.28) 0%,
-                rgba(29,78,216,0.14) 32%,
-                rgba(29,78,216,0) 62%),
-                /* right/bottom glow */
-                radial-gradient(1100px 650px at 82% 108%,
-                rgba(147,51,234,0.26) 0%,
-                rgba(147,51,234,0.12) 34%,
-                rgba(147,51,234,0) 64%),
-                /* gentle vertical tint for contrast */
-                linear-gradient(180deg, #0B1220 0%, #111827 55%, #0B1220 100%);
+                background-color: var(--bg-base);
+                background-image: var(--grad-1), var(--grad-2), var(--grad-3);
                 background-repeat: no-repeat;
                 background-position: center center;
-                background-attachment: scroll; /* change to fixed if you want a parallax feel */
-                color: #F3F3F6;
-                }
-            html{
-                scroll-behavior: smooth;
+                background-attachment: scroll;
             }
-            p{
-                color: #F3F4F6;
+
+            p {
+                color: var(--text-muted);
             }
+
             .container {
                 width: min(100%, 2000px);
                 margin-inline: auto;
                 padding-inline: 16px;
             }
+
     </style>
+    <link rel="stylesheet" href="Styles/color.css">
     <link rel="stylesheet" href="Styles/about.css">
     <link rel="stylesheet" href="Styles/contact.css">
     <link rel="stylesheet" href="Styles/header.css">
@@ -82,6 +73,10 @@
                     <li><a href="#services" onclick="closemenu()">Services</a></li>
                     <li><a href="#portfolio" onclick="closemenu()">Work</a></li>
                     <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                    <li><button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+                            <span class="thumb"></span>
+                        </button>
+                    </li>
                 </ul>
             </nav>
             <div class="grids">
@@ -323,6 +318,26 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
+  </script>
+  <script>
+    const root = document.documentElement;
+    const toggle = document.getElementById('themeToggle');
+
+    // load saved theme
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light' || savedTheme === 'dark') {
+    root.setAttribute('data-theme', savedTheme);
+    }
+
+    // button click
+    toggle.addEventListener('click', () => {
+    const current = root.getAttribute('data-theme') || 'dark';
+    const next = current === 'dark' ? 'light' : 'dark';
+
+    root.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    });
+
   </script>
 </body>
 </html>

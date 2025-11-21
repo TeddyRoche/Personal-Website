@@ -1,6 +1,3 @@
-.sub-title.cont{
-    color:#F3F4F6;
-}
 .contact-left{
     flex-basis: 35%;
 }
@@ -11,11 +8,6 @@
 .contact-left p{
     margin-top: 30px;
 }
-.contact-left p i{
-    color: #0EA5E9;
-    margin-right: 15px;
-    font-size: 25px;
-}
 .social-icons{
     margin-top: 30px;   
 }
@@ -23,26 +15,21 @@
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
-    color: #ababab;
     display: inline-block;
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: #F59E0B;
     transform: translateY(-5px);
 }
 .btn.btn2{
     display: inline-block;
-    background: #0EA5E9;
     transition: transform 0.5s;
-    filter: drop-shadow(8px 8px 10px #374151);
 }
 .btn .btn2 .new a{
     position: relative;
     top: 455px;
 }
 .btn.btn2:hover{
-    background: #F59E0B;
     transform: translateY(-5px);
 }
 .contact-right form{
@@ -52,13 +39,10 @@ form input, form textarea{
     width: 100%;
     border: 0;
     outline: none;
-    background: #1F2937;
     padding: 15px;
     margin: 15px 0;
     font-size: 18px;
     border-radius: 6px;
-    filter: drop-shadow(8px 8px 10px #374151);
-
 }
 form .btn2{
     padding: 14px 60px;
@@ -72,16 +56,4 @@ form .btn2{
     padding: 25px 0;
     font-weight: 300;
     margin-top: 20px;
-}
-input{
-    color: #F3F4F6;
-}
-input::placeholder{
-    color: #F3F4F6;
-}
-textarea{
-    color: #F3F4F6;
-}
-textarea::placeholder{
-    color: #F3F4F6;
 }

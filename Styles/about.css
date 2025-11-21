@@ -26,7 +26,6 @@
 .sub-title{
     font-size: 60px;
     font-weight: 600;
-    color: #0EA5E9;
 }
 .tab-titles{
     display: flex;
@@ -43,7 +42,6 @@
     content: '';
     width: 0;
     height: 3px;
-    background: #0EA5E9;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -57,8 +55,7 @@
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    font-size: 20px;
-    color: #0EA5E9;
+    font-size: 30px;
 }
 .ex-title{
     text-indent: 10px;
