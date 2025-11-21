@@ -1,7 +1,13 @@
 #portfolio{
     padding: 50px 0;
-    margin-top: -86px;
     padding-top: 100px;
+    width: 85vw;
+    margin: 0 auto;
+    max-width: 1850px;
+}
+.sub-title.wor{
+    cursor: default;
+    text-align: center; 
 }
 .work-list{
     display: grid;

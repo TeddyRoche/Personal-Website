@@ -1,3 +1,8 @@
+#contact{
+    width: 85vw;
+    margin: 0 auto;
+    max-width: 1850px;
+}
 .contact-left{
     flex-basis: 35%;
 }

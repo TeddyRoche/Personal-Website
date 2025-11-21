@@ -112,6 +112,8 @@ h1, h2, h3{
 /* Nav Bar Colors */
 nav ul li a{
     color: var(--text-main);
+    background-color: var(--bg-base);
+    filter: drop-shadow(0.5px 0.5px 2px var(--shadow));
 }
 nav ul li a::after{
     background: var(--text-accent);
