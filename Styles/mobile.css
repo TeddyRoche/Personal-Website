@@ -1,6 +1,7 @@
 @media only screen and (max-width: 600px){
     html{
         overflow-x: hidden;
+        width: 95vw;
     }
     body{
         width: 95vw;
