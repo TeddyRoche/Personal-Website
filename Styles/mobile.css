@@ -1,10 +1,6 @@
 @media only screen and (max-width: 600px){
     html{
         overflow-x: hidden;
-        width: 95vw;
-    }
-    body{
-        width: 95vw;
     }
     #header{
         background-size: auto;
@@ -72,7 +68,6 @@
     }
     .about-col-2{
         width: 90%;
-        margin-left: -5vw;
     }
     .tab-contents{
         width: 90%;
